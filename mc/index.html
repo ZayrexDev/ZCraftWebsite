@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <link href="asserts/css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="asserts/js/swap.js"></script>
+    <title>WYMI Minecraft Server</title>
+</head>
+
+<body>
+<div class="nav">
+    <ul>
+        <li class="nav-title" style="width: auto;">
+            <a style="font-size: 20px;">WYMI MC</a>
+        </li>
+        <li class="nav-item"><a href="#">首页</a></li>
+        <li class="nav-item"><!--suppress HtmlUnknownTarget -->
+            <a href="../doc/wymi-minecraft.html">文档</a>
+        </li>
+        <li class="nav-item"><a href="#detail">关于</a></li>
+    </ul>
+</div>
+<div id="intro">
+    <div class="backImg" id="img1"></div>
+    <div class="backImg" id="img2"></div>
+    <div id="title">
+        <h2 style="animation-delay: 0.05s;">ZCraft Lab's</h2>
+        <h1 style="animation-delay: 0.1s;">Wen</h1>
+        <h1 style="animation-delay: 0.2s;">Yu</h1>
+        <h1 style="animation-delay: 0.3s;">Military</h1>
+        <h1 style="animation-delay: 0.4s;">Industry</h1>
+        <h1 style="animation-delay: 0.5s;">Minecraft Server</h1>
+        <a style="color: rgb(128,128,128); animation-delay: 0.6s;">开放, 自由, 包容</a>
+    </div>
+    <a href="#joinIP" id="joinBtn">加入服务器</a>
+    <div class="photo">
+        <div class="peh">SHOT BY</div>
+        <div id="pe1" onclick="swapImg()"></div>
+    </div>
+    <div class="photo">
+        <div id="pe2" onclick="swapImg()">...</div>
+    </div>
+    <div class="countDown changing"></div>
+</div>
+<div id="detail">
+    <div class="detailItem" id="introduction">
+        <div class="floatLeft">
+            <h1>服务器简介</h1>
+            WYMI Minecraft Server, 是一个开放服务器, 有着友好的玩家, 轻松的环境, 以及多样的建筑。这里包含许多有趣的玩法,
+            我们每个玩家都将有一席之地。
+            本服务器在各种版本与整合包的基础上测试各种开源模组，并协助对Minecraft开源社区做出贡献。
+            我们的腐竹——服务器的开创者及维护者们, 将根据《服务器条例》管理服务器秩序, 缔造一个自由和谐的世界。
+            在模组的帮助下, 许多奇特地形存在于我们的地图中, 这将为探险增添乐趣与新意。
+            我们欢迎新成员的加入, 也希望各位热爱并遨游于Minecraft的玩家们能够喜欢我们的服务器, 并与我们共同建设, 共同探索。
+        </div>
+    </div>
+    <div class="detailItem" id="currentStat">
+        <div class="floatRight">
+            <h1>当期服务器状态</h1>
+            <div id="statBase">
+                <div id="verText">
+                    <a>基础版本</a>
+                    <a>/</a>
+                </div>
+                <div>
+                    <div id="statBaseVer">
+                        <a id="verType">[整合包]</a>
+                        <a id="verName">No Flesh Within Chest</a>
+                        <a id="verAlias">脆骨症</a>
+                    </div>
+                    <a class="verInfo">Minecraft 1.19.2, Forge</a>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+                <div style="width: 20px; height: 0; border: white 1px solid;"></div>
+                <a>加装模组</a>
+                <div style="width: 200px; height: 0; border: white 1px solid;"></div>
+            </div>
+            <table id="modTable">
+                <thead>
+                <tr>
+                    <th>模组名</th>
+                    <th>下载链接</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>暂无</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="detailItem" id="joinIP">
+        <div class="floatLeft">
+            <h1>加入服务器</h1>
+            <div id="hint">已复制</div>
+            <div id="popup">点击以复制</div>
+            <div id="addr"
+                 onclick="copyIP();"
+                 onmouseenter="document.querySelector('#popup').setAttribute('style','opacity: 1;');"
+                 onmouseleave="document.querySelector('#hint').setAttribute('style','opacity: 0;');
+                                document.querySelector('#popup').setAttribute('style','opacity: 0;');"
+            >mc.zcraft.xyz
+            </div>
+            <br>
+            * 官方KOOK:<a
+                href="https://kook.vip/2oi2dx">https://kook.vip/2oi2dx</a>
+        </div>
+    </div>
+    <div class="detailItem" id="rules">
+        <div class="floatCenter">
+            <h1>注意事项</h1>
+            <hr>
+            <ul>
+                <li>请遵守<!--suppress HtmlUnknownTarget -->
+                    <a href="../doc/rules.html">服务器条例</a>
+                </li>
+                <li>服务器内设有引导，新玩家请跟随</li>
+                <li>GL&amp;HF ;)</li>
+            </ul>
+            <br>
+            <div style="display: flex; gap:20px; justify-content: center;">
+                <a href="https://beian.miit.gov.cn/" target="_blank">新ICP备2025022080号-1</a>
+                <div>
+                    <img src="../asserts/img/beian.png" alt="beian" style="width: 20px; height: 20px; margin: auto;">
+                    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=65020302000217" rel="noreferrer"
+                       target="_blank">新公网安备65020302000217号</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

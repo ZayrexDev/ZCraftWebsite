@@ -1,0 +1,306 @@
+html, body, div, a {
+    background: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+}
+
+#about-github {
+    border: none;
+}
+
+#title-bar {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 0;
+}
+
+#about {
+    display: flex;
+    gap: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#about > div:nth-child(3) {
+    width: 30%;
+    text-align: left;
+}
+
+#about-container {
+    width: 100%;
+    text-align: right;
+}
+
+
+@keyframes spread {
+    from {
+        padding: 0 0 0 0;
+        opacity: 0;
+    }
+    to {
+        padding: 0 10px 0 10px;
+        opacity: 1;
+    }
+}
+
+
+.title-btn {
+    animation: spread;
+    animation-duration: 0.5s;
+    padding: 0 10px 0 10px;
+    transition: all 0.5s ease;
+    display: block;
+    cursor: pointer;
+}
+
+.title-btn:nth-of-type(1) {
+    border-right: 1px solid white;
+}
+
+.title-btn:nth-of-type(2) {
+    border-right: 1px solid white;
+}
+
+
+.title-btn:hover {
+    padding: 0 15px 0 15px;
+}
+
+.splitter {
+    width: 2px;
+    height: 80%;
+    background: black;
+}
+
+.hs {
+    border: white 2px solid;
+}
+
+.head {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#title {
+    display: flex;
+    gap: 20px;
+    baseline-shift: 10px;
+    flex-direction: column;
+}
+
+#products {
+    display: flex;
+    gap: 30px;
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+#products > div:nth-child(1) {
+    width: 30%;
+    text-align: right;
+}
+
+.hbox {
+    display: flex;
+    gap: 10px;
+}
+
+.hbox a {
+    align-content: center;
+}
+
+#contact-card {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 100px;
+}
+
+#bottom-info {
+    color: gray;
+    justify-content: center;
+    gap: 20px;
+}
+
+#bottom-info a {
+    color: gray;
+
+}
+
+#contact {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#products-container {
+    gap: 0;
+    display: inline-grid;
+    width: 100%;
+}
+
+.product-item {
+    background: transparent;
+    width: 100%;
+    cursor: pointer;
+    height: 20vh;
+    text-align: center;
+    background-size: cover;
+}
+
+.product-text {
+    color: black;
+    background: transparent;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.product-text:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.product-item:hover > .product-text {
+    padding-left: 20px;
+    backdrop-filter: blur(0px);
+}
+
+.page-box {
+    width: 100%;
+    height: calc(25% - 50px);
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    z-index: 2;
+    padding: 0 20px 0 20px
+}
+
+.container {
+    width: 100%;
+    height: 400%;
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#navBar {
+    transition: all 0.5s ease;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row;
+    z-index: 114;
+}
+
+.nav-back,
+.nav-icon,
+.nav-item {
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-back {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+.nav-item {
+    transition-property: background-color;
+    transition-delay: 0ms;
+    transition-duration: 500ms;
+    background-color: transparent;
+    color: unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item-back:hover,
+.nav-item:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.nav-icon {
+    font-family: Arial, serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-icon:hover {
+    max-width: 100px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#title-text {
+    animation: fadeIn 0.5s ease;
+    width: fit-content;
+}
+
+.box{
+    display:flex;
+    align-items:center;
+}
+.line{
+    border-top:3px solid white;
+    flex-grow:1;
+}
+.text{
+    margin:0 10px;
+}
+
+#title-text > div:nth-child(2) {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+#title-text > div:nth-child(3) {
+    width: 100%;
+}
+
+#title-text > div:nth-child(2) > div:nth-child(1) {
+    font-family: Arial, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#title-text > div:nth-child(2) > div:nth-child(2) {
+    font-family: Arial, serif;
+    font-size: 40px;
+    font-weight: lighter;
+}

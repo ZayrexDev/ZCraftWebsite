@@ -1,0 +1,356 @@
+* {
+    z-index: 5;
+}
+
+#statBase {
+    display: flex;
+    gap: 10px;
+}
+
+#modTable {
+    width: 40vw;
+    border: 1px solid white;
+}
+
+#modTable thead {
+    /*border-bottom: 1px solid white;*/
+}
+
+#statBaseVer {
+    display: flex;
+    gap: 5px;
+}
+
+#verText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#verText a {
+    font-size: 25px;
+}
+
+#verType {
+    font-size: 20px;
+}
+
+#verName {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#verAlias {
+    color: gray;
+    font-size: 20px;
+}
+
+.countDown {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#nextImg {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.changing {
+    animation-name: countDown;
+}
+
+@keyframes countDown {
+    from {
+        width: 100%;
+    }
+    to {
+        opacity: 1;
+        width: 0;
+    }
+}
+
+a {
+    color: white;
+}
+
+hr {
+    width: 400px;
+    border: 1px solid white;
+}
+
+.peh {
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    color: rgb(128, 128, 128);
+    animation-delay: 0.6s;
+    font-size: 10px;
+    text-align: right;
+}
+
+#pe1,
+#pe2 {
+    animation-duration: 1s;
+    position: relative;
+    text-align: right;
+    color: white;
+}
+
+.photo {
+    width: auto;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+#hint {
+    transition: opacity 500ms;
+    position: absolute;
+    line-height: 42px;
+    left: 434px;
+    opacity: 0;
+}
+
+#popup {
+    transition: opacity 500ms;
+    position: absolute;
+    line-height: 42px;
+    left: 410px;
+    opacity: 0;
+}
+
+.detailItem {
+    width: 100%;
+    height: 300px;
+}
+
+#currentStat {
+    background: url("../img/dark_oak_planks.png") repeat;
+    width: auto;
+}
+
+#joinIP {
+    background: url("../img/dirt.png") repeat;
+}
+
+#rules {
+    background: url("../img/gray_wool.png") repeat;
+}
+
+#addr {
+    align-items: center;
+    border: 2px solid #a0a0a0;
+    display: block;
+    width: 368px;
+    height: 40px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+    background: #000;
+    font-size: 15px;
+    color: #fff;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.floatRight,
+.floatLeft,
+.floatCenter {
+    overflow: hidden;
+    position: absolute;
+    padding: 10px 100px;
+    height: 300px;
+    width: 50%;
+}
+
+.floatCenter {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.floatCenter li {
+    list-style-type: none;
+}
+
+.floatCenter ul {
+    padding-inline-start: 0;
+}
+
+.floatRight {
+    right: 0;
+}
+
+.floatLeft {
+    left: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from {
+        left: 100px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#detail {
+    z-index: 6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100vh);
+    overflow: hidden;
+    background: #139ED6;
+    color: white;
+}
+
+#closeBtn {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+#joinBtn {
+    display: block;
+    background: #139ED6;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    left: -100px;
+    opacity: 0;
+    position: relative;
+    transition: width 500ms;
+    animation: floatIn 0.8s 500ms forwards;
+}
+
+.backImg {
+    animation-duration: 2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-image: url("../img/screenshots/img1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#intro {
+    padding: 100px;
+    transition-property: all;
+    transition-duration: 500ms;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        left: -100px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+#title h1,
+#title h2,
+#title a {
+    left: -100px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-name: floatIn;
+    animation-duration: 500ms;
+    margin: 0;
+    color: white;
+}
+
+#title h2 {
+    font-size: 12px;
+    color: gray;
+}
+
+/*nav*/
+.nav li {
+    position: relative;
+    top: -16px;
+    list-style-type: none;
+    float: left;
+    width: 100px;
+    height: 50px;
+    padding: 0 10px;
+    text-align: center;
+    display: block;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav .nav-item a {
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.nav li a {
+    color: white;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav .nav-item a:hover {
+    background: #0F77A2;
+}
+
+.nav {
+    transition: background 0.5s;
+    z-index: 114;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 50px;
+    background: transparent;
+}

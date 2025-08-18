@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>ZCraft Lab 开源分享</title>
+    <link href="asserts/css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="asserts/js/page.js"></script>
+</head>
+<body>
+
+<div id="navBar">
+    <div class="nav-icon">Z</div>
+    <a class="nav-item" onclick="changePageTo(1)">首页</a>
+    <a class="nav-item" onclick="changePageTo(2)">关于</a>
+    <a class="nav-item" onclick="changePageTo(3)">作品</a>
+    <a class="nav-item" onclick="changePageTo(4)">联系</a>
+    <div class="nav-back">
+    </div>
+</div>
+<div class="container">
+    <div class="page-box" id="title">
+        <div id="title-text">
+            <div style="text-align: left;">
+                开源 • 分享 • 交流
+            </div>
+            <div>
+                <div>ZCraft</div>
+                <div>Lab</div>
+            </div>
+            <div style="text-align: center;">
+                Produce. Create. Craft.
+            </div>
+        </div>
+        <div id="title-bar">
+            <a class="title-btn" onclick="changePageTo(2)">关于</a>
+            <a class="title-btn" onclick="changePageTo(3)">作品</a>
+            <a class="title-btn" onclick="changePageTo(4)">联系</a>
+        </div>
+    </div>
+    <div class="page-box" id="about">
+        <div id="about-container">
+            <p>
+                这里是ZCraft Lab， 一个个人分享开源作品的网站。
+            </p>
+            <p>
+                本人仍为初学者，很多方面还是新手，目前仍在学习，请各位大佬指教~
+            </p>
+            <p>
+                目前计划：学习Java Web
+            </p>
+            <iframe id="about-github" src="https://github-readme-stats.vercel.app/api?username=ZayrexDev&theme=tokyonight&show_icons=true&hide_border=false&count_private=true"></iframe>
+        </div>
+        <hr class="splitter">
+        <div>
+            <h1>关于</h1>
+        </div>
+    </div>
+    <div class="page-box" id="products">
+        <div>
+            <h1>作品</h1>
+            <h1>一览</h1>
+        </div>
+        <hr class="splitter">
+        <div id="products-container">
+            <div class="product-item" style="background-image: url('./asserts/img/prod/wymi.jpg')">
+                <a class="product-text" href="./mc" target="_blank" style="color: white">
+                    <h2>WYMI Minecraft</h2>
+                    <h1>&rarr;</h1>
+                </a>
+            </div>
+            <div class="product-item" style="background-image: url('./asserts/img/prod/apd.png')">
+                <a class="product-text" href="https://github.com/ZayrexDev/ACGPicDownload" target="_blank">
+                    <h2>ACG Picture Downloader</h2>
+                    <h1>&rarr;</h1>
+                </a>
+            </div>
+            <div class="product-item" style="background-image: url('./asserts/img/prod/iis.png')">
+                <a class="product-text" target="_blank" href="https://github.com/ZayrexDev/ItemInSlot">
+                    <h2>Item In Slot</h2>
+                    <h1>&rarr;</h1>
+                </a>
+            </div>
+            <div class="product-item" style="background-image: url('./asserts/img/prod/unify.png')">
+                <a class="product-text" target="_blank" href="https://github.com/ZayrexDev/Unify">
+                    <h2>Unify</h2>
+                    <h1>&rarr;</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-box" id="contact">
+        <div class="box">
+            <span class="line"></span>
+            <span class="text" style="font-size: 40px">联系方式</span>
+            <span class="line"></span>
+        </div>
+        <div id="contact-card">
+            <div>
+                <img class="head" src="https://foruda.gitee.com/avatar/1750167780615384742/7866715_zxzxy_1750167780.png!avatar200" alt="head_pic">
+            </div>
+            <div class="hs"></div>
+            <div>
+                <h1 style="font-family: Arial,serif">Zayrex</h1>
+                <p>Mail: zay.rex@qq.com</p>
+                <div class="hbox">
+                    <p>Github: </p>
+                    <a target="_blank" href="https://github.com/ZayrexDev">https://github.com/ZayrexDev</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="hbox" id="bottom-info">
+            <p>Presented by Zayrex. No copyright reserved. Licensed under MIT license.</p>
+            <a href="https://beian.miit.gov.cn/" target="_blank">新ICP备2025022080号-1</a>
+            <div style="display: flex; justify-content: center; gap: 5px">
+                <img src="asserts/img/beian.png" alt="beian" style="width: 20px; height: 20px; margin: auto;">
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=65020302000217" rel="noreferrer" target="_blank">新公网安备65020302000217号</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
