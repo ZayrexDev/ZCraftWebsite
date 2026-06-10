@@ -52,14 +52,11 @@ html, body, div, a {
     cursor: pointer;
 }
 
-.title-btn:nth-of-type(1) {
+.title-btn:nth-of-type(1),
+.title-btn:nth-of-type(2),
+.title-btn:nth-of-type(3) {
     border-right: 1px solid white;
 }
-
-.title-btn:nth-of-type(2) {
-    border-right: 1px solid white;
-}
-
 
 .title-btn:hover {
     padding: 0 15px 0 15px;
